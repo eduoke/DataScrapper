@@ -34,5 +34,4 @@ venv/
 data/
 
 # enviroment configuration
-.env 
-
+.env
