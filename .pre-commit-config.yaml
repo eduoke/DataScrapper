@@ -25,7 +25,11 @@ repos:
       - id: mypy
         name: Run mypy
         entry: .venv/Scripts/mypy.exe
-        exclude: .env
+        exclude: |
+              (?x)(
+                    .env |
+                    ^.src/scrapper|
+                  )
         language: python
         language_version: python3.12
         types: ["python"]
